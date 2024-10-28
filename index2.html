@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tyler's Homepage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+
+    img {
+        text-align: center;
+        margin: 20px;
+    }
+    nav a {
+        text-decoration: none;
+        
+    }
+
+    h1 {
+        text-align: left;
+        color: rgb(27, 2, 2);
+    }
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    body {
+        background-color: rgb(252, 246, 246);
+    }
+
+    .navigation {
+        font-size: 25px;
+        padding: 10px;
+    } 
+
+    .portfolio {
+        background-color: #f9f9f9;
+        border-radius: 8px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: inline-block; 
+        margin-bottom: 10px;
+        font-size: 70px;
+    }
+</style>
+<body>
+    <h1 class="portfolio">My Portfolio</h1>
+    <nav class="navigation">
+        <a href="#contact">Contact</a>
+        <a href="#about-me">About</a>
+        <a href="#goals">Goals</a>
+    </nav>
+    <section class="about-me">
+        <h2>Tyler's Homepage</h2>
+        <p>
+            Hello, my name is Tyler and I am an Informatics major.  I was a Computer Science major for my first 3 years here at ASU.
+            Playing hockey, reading, and coding are activites I enjoy outside of school.
+        </p>
+    </section>
+
+    <section class="goals">
+        <h2>My Goals</h2>
+        <p>
+            My goals are to play professional hockey and after I am done playing, work in either cybersecurity, gaming, or honestly any other coding related
+            job because I do enjoy most aspects of programming (not data science).
+        </p>
+    </section>
+
+    <section>
+        <h3>Check out what I've been reading:</h3>
+        <a href="https://www.goodreads.com/review/list/162942189?ref=nav_mybooks">Goodreads account</a>
+    </section>
+
+    <section>
+        <img src="johnny.jpg" style="height: 300px">
+    </section>
+
+    <section class="contact-form">
+        <h3>Contact Me</h3>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+</body>
+</html>
