@@ -3,147 +3,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <style>
-        /*Resources used: 
-        https://blog.sachingurjar.me/how-to-create-flashing-blinking-text-with-html-css-and-javascript/
-        https://css-tricks.com/animating-border/
-        */
-        * {
-            font-size: 25px;
-            }
+    <link href="main.css" rel="stylesheet">
 
-         body {
-            background-image:  linear-gradient(#b6b2bc, #4500e8);
-            background-repeat: repeat;
-            height: 100%;
-            }
-
-         img {
-            width: 65vw;
-            }
-
-         section {
-            display: flex;
-            justify-content: center;
-            margin-top: 100px; 
-            }
-
-         section > div {
-            background-color: #ffffff;
-            border: solid black;
-            border-radius: 35px;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-            width: 80vw;
-            padding: 10px;
-            outline: solid 5px #FC5185;
-            transition: outline 0.3s linear;
-            margin: 0.5em;
-            }
-
-         section > div:hover {
-            outline-width: 30px;
-             }
-
-         h1 {
-            text-align: center;
-            font-weight: bolder;
-            font-size: 2rem;
-            }
-
-         h1:hover {
-            transform: scale(1.2);
-            color:#4500e8;
-            }
-
-         .book-container {
-            display: inline-flex;
-            flex-direction: column; 
-            width: 48%; 
-            box-sizing: border-box; 
-            margin-bottom: 20px;
-            }
-
-         .book {
-            text-align: center; 
-            margin-bottom: 10px;
-            }
-
-        .cover {
-            width: 20%;
-            height: auto;
-            }
-
-        .title {
-            font-size: 20px;
-            margin: 10px 0;
-            color: #000000;
-            text-align: center;
-            }
-
-        .author {
-            font-size: 16px;
-            color: #000000;
-            }
-
-        .goal {
-            font-size: 30px;
-            color: white;
-            background-color: #2f00ff;
-            border: solid black;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            margin: 10px;
-            padding: 25px;
-            }
-
-        .goal:hover {
-            background-color: #8800ff;
-            transform: scale(2.1);
-            }
-
-        @media (max-width: 600px) {
-            h1 {
-                animation-name: blink;
-                animation-duration: 2s;
-                animation-timing-function: ease-in;
-                animation-iteration-count: infinite;
-            }
-
-            @keyframes blink {
-                0% { color: red; }
-                50% { color: white; }
-                100% { color: red; }
-                }
-
-
-            .goal {
-                font-size: 15px;
-                color: white;
-                background-color: #2f00ff;
-                border: solid black;
-                border-radius: 8px;
-                margin: 10px;
-                padding: 25px;
-                }
-
-                section > div {
-                font-size: 10px;
-                background-color: #ffffff;
-                border: solid black;
-                border-radius: 35px;
-                font-family: 'Courier New', Courier, monospace;
-                text-align: center;
-                width: 100vw;
-                padding: 10px;
-                outline: solid 5px #FC5185;
-                margin: 0.5em;
-            }
-        }
-    </style>
 </head>
 <body>
     <section id="about-me">
@@ -185,6 +48,12 @@
             <h1>My favorite player</h1>
             <button class="goal" onclick="window.location.href='https://youtu.be/Ah38wCEJEr0.mp4';">Game 7 Winner</button>
             <img src="./johnny.jpg"/>
+        </div>
+    </section>
+
+    <section id="se-skills">
+        <div>
+            <button class="skills" onclick="window.location.href='skills.html'">Software Skills</button>
         </div>
     </section>
 </body>
